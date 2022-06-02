@@ -156,7 +156,7 @@
  
              document.body.appendChild(canvas);
 
-             document.addEventListener("mousedown",clique);
+             document.addEventListener("click",clique);
    
              estadoAtual = estados.jogar;
              roda();
@@ -179,8 +179,8 @@
         obstaculos.atualiza();
     
     else if (estadoAtual == estados.perdeu)
-        obstaculos.limpa
-         }
+
+        obstaculos.limpa();}
 
          function desenha() {
              ctx.fillStyle = "#50beff"
